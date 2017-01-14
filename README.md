@@ -6,7 +6,6 @@ ACM-ICPC Live Archive: https://icpcarchive.ecs.baylor.edu/<br />
 Sphere Online Judge: http://www.spoj.com/<br />
 Timus Online Judge: http://acm.timus.ru/<br />
 URI Online Judge: https://www.urionlinejudge.com.br/judge/en/login<br />
-USA Computing Olympiad: http://usaco.org/<br />
 USACO Training: http://train.usaco.org/usacogate<br />
 A2 Online Judge: https://a2oj.com/ps<br />
 Zhejiang Univeristy Online Judge: http://acm.zju.edu.cn/onlinejudge/<br />
@@ -23,3 +22,4 @@ Codeforces: http://codeforces.com/<br />
 Top Coder: https://www.topcoder.com/community/competitive-programming/<br />
 Facebook Hacker Cup: https://www.facebook.com/hackercup/?fref=ts<br />
 Google Code Jam: https://code.google.com/codejam/<br />
+USA Computing Olympiad: http://usaco.org/<br />
