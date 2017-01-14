@@ -1,5 +1,4 @@
-solution of  problems<br />
-<br />
+Solution of  problems<br />
 <br />
 JUDGES ONLINE:
 UVA Online Judge: https://uva.onlinejudge.org/ <br />
@@ -18,7 +17,6 @@ Fuzhou University Online Judge: http://acm.fzu.edu.cn/<br />
 Aizu Online Judge: http://judge.u-aizu.ac.jp/onlinejudge/<br />
 Peking University Judge Online: http://poj.org/<br />
 Hangzhou Dianzi University Online Judge: http://acm.hdu.edu.cn/<br />
-<br />
 <br />
 PROGRAMMING COMPETITIONS<br />
 Codeforces: http://codeforces.com/<br />
