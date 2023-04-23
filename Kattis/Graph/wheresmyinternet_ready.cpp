@@ -39,17 +39,20 @@ int main() {
     }
 
     queue<int> Q;
+    
     Q.push(0);
+    visited[0] = 1;
 
     while(!Q.empty()) {
       int node = Q.front();
       Q.pop();
 
-      visited[node] = 1;
-
       for(int i = 0; i < V[node].size(); i++) {
         int child = V[node][i];
-        if(!visited[child]) Q.push(child);
+        if(!visited[child]) {
+          Q.push(child);
+          visited[child] = 1;
+        }
       }
     }
 
