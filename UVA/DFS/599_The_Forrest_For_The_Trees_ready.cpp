@@ -50,14 +50,14 @@ void getNodes(string line) {
 }
 
 int dfs(int u) {
+  if(visited[u]) return 0;
+
   visited[u] = 1;
   int count = 1;
   
   for(int i = 0; i < graph[u].size(); i++) {
     int v = graph[u][i];
-    if(!visited[v]) {
-      count += dfs(v);
-    }
+    count += dfs(v);
   }
 
   return count;
