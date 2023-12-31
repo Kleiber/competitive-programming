@@ -38,14 +38,16 @@ bool isValid(int r, int c) {
 }
 
 int dfs(int r, int c) {
-  visited[r][c] = 1;
+  if(visited[r][c]) return 0;
 
+  visited[r][c] = 1;
   int cont = 1;
+
   for(int k = 0; k < MOV; k++) {
     int nr = r + dr[k];
     int nc = c + dc[k];
 
-    if(isValid(nr,nc) && !visited[nr][nc] && graph[nr][nc] == 1) {
+    if(isValid(nr,nc) && graph[nr][nc] == 1) {
       cont += dfs(nr, nc);
     }
   }
