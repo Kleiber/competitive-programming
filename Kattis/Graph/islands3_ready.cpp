@@ -40,13 +40,15 @@ bool isValid(int r, int c) {
 }
 
 void dfs(int r, int c) {
+  if(visited[r][c]) return;
+
   visited[r][c] = 1;
 
   for(int k = 0; k < MOV; k++) {
     int nr = r + dr[k];
     int nc = c + dc[k];
 
-    if(isValid(nr, nc) && !visited[nr][nc] && (graph[nr][nc] == LAND || graph[nr][nc] == CLOUD)) {
+    if(isValid(nr, nc) && (graph[nr][nc] == LAND || graph[nr][nc] == CLOUD)) {
       dfs(nr, nc);
     }
   }
