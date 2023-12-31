@@ -28,12 +28,13 @@ vector<bool> visited;
 vector<vector<int>> graph;
 
 void dfs(int u) {
+  if(visited[u]) return;
+
   visited[u] = 1;
 
   for(int i = 0; i < graph[u].size(); i++) {
     int v = graph[u][i];
-
-    if(!visited[v]) dfs(v);
+    dfs(v);
   }
 }
 
