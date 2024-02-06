@@ -22,6 +22,7 @@
 #include <cstring>
 using namespace std;
 
+#define SIZE 3
 
 int main() {
     // do not remove this code if you use cin or cout
@@ -34,8 +35,8 @@ int main() {
     int N;
     cin>>N;
 
-    vector<int> position(3), count(3);
-    for(int i = 0 ; i < 3; i++) position[i] = i;
+    vector<int> position(SIZE), count(SIZE);
+    for(int i = 0 ; i < SIZE; i++) position[i] = i;
 
     for(int i = 0; i < N; i++) {
       int a, b, g;
