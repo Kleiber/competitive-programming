@@ -29,12 +29,12 @@ const int MAX = 1e5+5;
 int n;
 int h[MAX];
 
-long long solve(int pos) {
+int solve(int pos) {
   if(pos > n) return INF;
   if(pos == n) return 0;
 
-  long long cost1 = abs(h[pos + 1] - h[pos]);
-  long long cost2 = abs(h[pos + 2] - h[pos]);
+  int cost1 = abs(h[pos + 1] - h[pos]);
+  int cost2 = abs(h[pos + 2] - h[pos]);
 
   return min(cost1 + solve(pos + 1), cost2 + solve(pos + 2));
 }
