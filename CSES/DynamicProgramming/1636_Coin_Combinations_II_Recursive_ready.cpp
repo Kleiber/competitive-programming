@@ -24,10 +24,12 @@ using namespace std;
 
 
 const int MOD = 1e9+7;
- 
+const int MAX = 1e6+5;
+const int SIZE = 105;
+
 int N, X;
 vector<int> C;
-vector<vector<int>> dp;
+int dp[SIZE][MAX];
  
 bool order(int a, int b) {
   return a > b;
@@ -52,11 +54,12 @@ int main() {
     // do not remove this code if you use cin or cout
     ios::sync_with_stdio(false);
     cin.tie(0);
+
+    memset(dp, -1, sizeof(dp));
  
     cin>>N>>X;
  
     C = vector<int>(N);
-    dp = vector<vector<int>> (N, vector<int>(X + 1, -1));
  
     for(int i = 0; i < N; i++) cin>>C[i];
  
@@ -66,4 +69,3 @@ int main() {
  
     return 0;
 }
-
