@@ -34,10 +34,10 @@ int main() {
     cin>>t;
 
     while(t--) {
-      int n, k;
+      long long int n, k;
       cin>>n>>k;
 
-      vector<int> V(n);
+      vector<long long int> V(n);
       long long int sum = 0;
 
       for(int i = 0; i < n; i++) {
@@ -49,8 +49,8 @@ int main() {
 
       if(sum <= k) ans = n;
       else {
-        int leftSum = (k + 1)/2;
-        int rightSum = k/2;
+        long long int leftSum = (k + 1)/2;
+        long long int rightSum = k/2;
 
         int left = 0;
         int right = n - 1;
@@ -65,7 +65,7 @@ int main() {
           right--;
         }
 
-        ans = (n - 1) - (right - left);
+        ans = n - (right - left + 1);
       }
 
       cout<<ans<<endl;
@@ -73,4 +73,3 @@ int main() {
 
     return 0;
 }
-
