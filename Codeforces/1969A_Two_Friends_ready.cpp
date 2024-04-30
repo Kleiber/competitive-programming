@@ -40,24 +40,15 @@ int main() {
       vector<int> V(n + 1);
       for(int i = 1; i <= n; i++) cin>>V[i];
 
-      vector<bool> visited(n + 1, 0);
-      int minimum = MIN;
-
+      int ans = 3;
       for(int i = 1; i <= n; i++) {
-        int cont = 0;
-        int ind = i;
-
-        while(!visited[ind]) {
-          visited[ind] = 1;
-          ind = V[ind];
-          cont++;
+        if(i == V[V[i]]) {
+          ans = 2;
+          break;
         }
-
-        if(cont > 0) minimum = min(minimum, cont);
       }
 
-      if(minimum > 2) cout<<3<<endl;
-      else cout<<2<<endl;
+      cout<<ans<<endl;
     }
 
     return 0;
